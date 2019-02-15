@@ -1,0 +1,25 @@
+# Q3 - oop_todo.rb
+# a. Explain line 5: creates a new instance of the List class from
+#    the required file list.rb and assigns it to the variable "list".
+# b. Explain line 8: calls the function "add_task" from the List class,
+#    with an argument that creates a new instance of the Task class from
+#    required file task.rb. The Task instance takes the argument
+#    "Feed the cat" for @name and the implied argument @complete is assigned
+#    as false.
+# c. Explain line 14: calls the @name argument of the 2nd task instance in the
+#    tasks array of the list instance of the List class and puts the name to
+#    to the terminal.
+# d. Explain line 31: calls the "complete!" function of the Task class on
+#    the first item in the tasks array of list, changing @complete from
+#    false to true.
+
+# Q4
+# a. oop_todo has several advantages over the procedural. First, because the code is
+#    split up by function - the component classes are separated into their own files -
+#    the code is easier to read and the fucntionality is easier to parse. Also,
+#    because of the classes creating the lists and tasks, setting up new lists
+#    and tasks will be easier, since there are pre-set initializer and getter methods.
+# b. The advantage of procedural would be that the code is all in one file (which makes
+#    it more efficient to examine) and that everything is performed in a very straight-
+#    forward way. However, with a more complex program, this would get more an more
+#    problematic.
