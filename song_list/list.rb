@@ -1,7 +1,7 @@
 class List
 
-  def initialize(songs)
-    @songs = [ ]
+  def initialize
+    @songs = []
   end
 
   def songs
@@ -14,7 +14,7 @@ class List
 
   def play
     index = 0
-    @songs.length times do
+    @songs.length.times do
       `say #{@songs[index].lyrics}`
       index = index + 1
     end
@@ -23,7 +23,7 @@ class List
   def shuffle
     index = 0
     shuffled = @songs.sort_by { rand }
-    shuffled.length times do
+    shuffled.length.times do
       `say #{shuffled[index].lyrics}`
       index = index + 1
     end
@@ -32,11 +32,11 @@ class List
   def duration
     seconds = 0
     index = 0
-    @songs.length times do
+    @songs.length.times do
       seconds = seconds + @songs[index].duration
       index = index + 1
     end
-    return "Total playlist duration: #{seconds}."
+    return "Total playlist duration: #{seconds} seconds."
   end
 
 end

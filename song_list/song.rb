@@ -3,7 +3,7 @@ class Song
   def initialize(title, artist, duration, lyrics)
     @title = title
     @artist = artist
-    @duration = durations
+    @duration = duration
     @lyrics = lyrics
   end
 

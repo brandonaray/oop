@@ -39,8 +39,7 @@ class List
   end
 
   def sort_by_priority
-    sorted = tasks.sort_by { |a,b| b[0] <=> a[0] }
-    return sorted
+    
   end
 
 end
