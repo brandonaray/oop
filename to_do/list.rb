@@ -39,7 +39,14 @@ class List
   end
 
   def sort_by_priority
-    
+    sorted = @tasks.sort_by {|task| -task.priority}
+    new_arr = []
+    index = 0
+    sorted.length.times do
+      new_arr << sorted[index].name
+      index = index + 1
+    end
+    return new_arr
   end
 
 end

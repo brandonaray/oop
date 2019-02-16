@@ -5,11 +5,11 @@ require_relative "task"
 list = List.new
 
 # Create tasks and add them to the list
-list.add_task(Task.new("Feed the cat", 10))
+list.add_task(Task.new("Feed the cat", 9))
 list.add_task(Task.new("Take out trash", 6))
 list.add_task(Task.new("Mow the lawn", 4))
-list.add_task(Task.new("Wash the dishes", 1))
-list.add_task(Task.new("Sweep the floor", 2))
+list.add_task(Task.new("Wash the dishes", 7))
+list.add_task(Task.new("Sweep the floor", 10))
 
 # Print out the second task in the list
 puts "Second task:"
